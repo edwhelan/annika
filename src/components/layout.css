@@ -21,7 +21,17 @@ html, body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: baseline;
 }
+
+.bot-nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-bottom: .3em;
+}
+
 .nav-bar {
   display: flex;
   flex-direction: row;
@@ -39,6 +49,7 @@ html, body {
   justify-content: center;
   width: 100%;
   /* margin: 0 5em; */
+  margin-top: .5em;
 }
 
 .home img {

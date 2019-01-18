@@ -14,7 +14,7 @@ const Header = ({ siteTitle }) => (
       }}
     >
         <div className='nav-icons'>
-          <a href='#'><FaYoutube /></a>
+          <a href='https://www.youtube.com/channel/UCFUJKiHk4pKEzR-hLhBBWPg'><FaYoutube /></a>
         </div>
       <div>
         <h1 style={{ margin: 0 }}>
@@ -30,10 +30,13 @@ const Header = ({ siteTitle }) => (
         </h1>
       </div>
       <div className='nav-icons'>
-        <a href='#'><FaFacebookSquare /></a>
+        <a href='https://facebook.com/AnnikasLeisure'><FaFacebookSquare /></a>
       </div>
     </div>
-            <div className='bot-nav'></div>
+            <div className='bot-nav'>
+            <Link to='/works'> works</Link>
+            <Link to='/about' > about</Link>
+            </div>
   </div>
 )
 
