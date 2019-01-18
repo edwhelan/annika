@@ -5,32 +5,35 @@ import React from 'react'
 import {FaYoutube, FaFacebookSquare} from 'react-icons/fa';
 
 const Header = ({ siteTitle }) => (
-  <div
-    className='nav-bar'
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-      <div className='nav-icons'>
-        <a href='#'><FaYoutube /></a>
+  
+  <div className='top-nav'>
+    <div
+      className='nav-bar'
+      style={{
+        marginBottom: `1.45rem`,
+      }}
+    >
+        <div className='nav-icons'>
+          <a href='#'><FaYoutube /></a>
+        </div>
+      <div>
+        <h1 style={{ margin: 0 }}>
+          <Link
+            to="/"
+            style={{
+              color: `white`,
+              textDecoration: `none`,
+            }}
+          >
+            {siteTitle}
+          </Link>
+        </h1>
       </div>
-    <div>
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+      <div className='nav-icons'>
+        <a href='#'><FaFacebookSquare /></a>
+      </div>
     </div>
-    <div className='nav-icons'>
-      <a href='#'><FaFacebookSquare /></a>
-    </div>
+            <div className='bot-nav'></div>
   </div>
 )
 

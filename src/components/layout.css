@@ -11,7 +11,17 @@ html, body {
   height: 100%;
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
+.top-nav{
+  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+  display: flex;
+  flex-direction: column;
+}
 
+.bot-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 .nav-bar {
   display: flex;
   flex-direction: row;
@@ -34,6 +44,5 @@ html, body {
 .home img {
   max-width: 100%;
   height: 80vh;
-  /* height: auto; */
   margin: 0 5em;
 }
