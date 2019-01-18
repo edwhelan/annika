@@ -6,3 +6,10 @@ html {
 body {
   margin: 0;
 }
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+}

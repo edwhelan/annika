@@ -2,20 +2,17 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 
+import {FaYoutube} from 'react-icons/fa';
+
 const Header = ({ siteTitle }) => (
   <div
+    className='nav-bar'
     style={{
       background: `rebeccapurple`,
       marginBottom: `1.45rem`,
     }}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
+    <div>
       <h1 style={{ margin: 0 }}>
         <Link
           to="/"
@@ -27,6 +24,9 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+    </div>
+    <div>
+      <a href='#'><FaYoutube /></a>
     </div>
   </div>
 )
