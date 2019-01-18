@@ -2,7 +2,7 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import {FaYoutube} from 'react-icons/fa';
+import {FaYoutube, FaFacebook, FaFacebookSquare} from 'react-icons/fa';
 
 const Header = ({ siteTitle }) => (
   <div
@@ -25,8 +25,11 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
-    <div>
+    <div className='nav-icons'>
       <a href='#'><FaYoutube /></a>
+    </div>
+    <div className='nav-icons'>
+      <a href='#'><FaFacebookSquare /></a>
     </div>
   </div>
 )

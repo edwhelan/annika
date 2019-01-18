@@ -13,3 +13,7 @@ body {
   justify-content: space-around;
   align-items: baseline;
 }
+
+.nav-icons a{
+  color: white;
+}
