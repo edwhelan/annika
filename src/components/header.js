@@ -2,7 +2,7 @@ import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-import {FaYoutube, FaFacebook, FaFacebookSquare} from 'react-icons/fa';
+import {FaYoutube, FaFacebookSquare} from 'react-icons/fa';
 
 const Header = ({ siteTitle }) => (
   <div
@@ -12,6 +12,9 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
+      <div className='nav-icons'>
+        <a href='#'><FaYoutube /></a>
+      </div>
     <div>
       <h1 style={{ margin: 0 }}>
         <Link
@@ -24,9 +27,6 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-    </div>
-    <div className='nav-icons'>
-      <a href='#'><FaYoutube /></a>
     </div>
     <div className='nav-icons'>
       <a href='#'><FaFacebookSquare /></a>
