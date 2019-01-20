@@ -21,12 +21,15 @@ import foampuppet from '../images/feltPuppet.jpg'
 const worksPage = () => (
   <Layout>
     <SEO title="Selected Works" />
+    <div className='selected-works-wrapper'>
+    <div><p>Vist Facebook and Youtube for more works</p></div>
     <div className="scrolling-wrapper-flexbox">
       <div className="card"><img src={litefear} alt=''/></div>
       <div className="card"><img src={giantskeleton} alt=''/></div>
       <div className="card"><img src={invulncat} alt=''/></div>
       <div className="card"><img src={ladywriting} alt=''/></div>
       <div className="card"><img src={foampuppet} alt=''/></div>
+    </div>
     </div>
   </Layout>
 )
