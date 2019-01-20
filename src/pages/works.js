@@ -4,6 +4,12 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
+import litefear from '../images/monstermash.jpg'
+import giantskeleton from '../images/largePuppet.jpg'
+import invulncat from '../images/invulnerableCat.jpg'
+import ladywriting from '../images/puppetAtDesk.jpg'
+import foampuppet from '../images/feltPuppet.jpg'
+
 // Select works page 
 // --- photo one- lite fear
 // --- photo two- giant skeleton
@@ -11,14 +17,17 @@ import SEO from '../components/seo'
 // --- photo four- lady writing (color)
 // --- photo five- foam puppet
 // ----- asks them to visit facebook and YouTube for more works
-// https://facebook.com/AnnikasLeisure
-// https://www.youtube.com/channel/UCFUJKiHk4pKEzR-hLhBBWPg
 
 const worksPage = () => (
   <Layout>
     <SEO title="Selected Works" />
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <div className="scrolling-wrapper-flexbox">
+      <div className="card"><img src={litefear} alt=''/></div>
+      <div className="card"><img src={giantskeleton} alt=''/></div>
+      <div className="card"><img src={invulncat} alt=''/></div>
+      <div className="card"><img src={ladywriting} alt=''/></div>
+      <div className="card"><img src={foampuppet} alt=''/></div>
+    </div>
   </Layout>
 )
 
