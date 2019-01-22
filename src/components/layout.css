@@ -15,6 +15,7 @@ html, body {
   background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
   display: flex;
   flex-direction: column;
+  border-bottom: 2px solid black;
 }
 
 .bot-nav{
@@ -68,6 +69,8 @@ html, body {
   overflow-y: hidden;
   white-space: nowrap;
   max-height: 70vh;
+  border-top:2px solid #243949;
+  border-bottom:2px solid #243949;
 }
 
   .card {
@@ -80,12 +83,18 @@ html, body {
   }
 
   .about-page-wrapper{
+    margin: 0 auto;
+    width: 400px;
     display: flex; 
     flex-direction: column;
     align-items: center;
     height: 60vh;
   }
+
   .about-page-wrapper p {
+    border: 1.5px solid #243949;
+    background-color: #fdfbfb;
+    border-radius: 6px;
     padding: 2em 4em;
   }
 .about-page-wrapper img {
