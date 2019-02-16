@@ -22,7 +22,7 @@ const worksPage = () => (
   <Layout>
     <SEO title="Selected Works" />
     <div className='selected-works-wrapper'>
-    <div><p>Vist Facebook and Youtube for more works</p></div>
+    <div><p>Visit Facebook and Youtube for more works</p></div>
     <div className="scrolling-wrapper-flexbox">
       <div className="card"><img src={litefear} alt=''/></div>
       <div className="card"><img src={giantskeleton} alt=''/></div>
