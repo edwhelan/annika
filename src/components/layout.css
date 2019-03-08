@@ -9,53 +9,40 @@ body {
 html, body {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  background-image: linear-gradient(to right, #0b6377 0%, #80a1ac 100%);
+
 }
-.top-nav{
-  background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+.navbar{
+  background-image: linear-gradient(to right, #0b6377 0%, #80a1ac 100%);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   border-bottom: 2px solid black;
+  justify-content: space-evenly;
+  align-items: baseline;
+  height: 4em;
 }
-.bot-nav{
+
+.navbar h1 {
+margin-right: -0.2em;
+}
+
+.nav-elements{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: baseline;
+  justify-content: space-evenly;
+  margin-right: -0.6em;
 }
-
-.bot-nav a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 1.2em;
-  font-weight: 400;
-  margin-bottom: .3em;
-  transition: ease-in .25s
-}
-.bot-nav a:hover {
-  color: rgb(220, 178, 41);
-  text-decoration: underline;
-}
-
-.nav-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: baseline;
-}
-
-.nav-icons a{
-  color: white;
+.navbar .nav-elements a {
   font-size: 1.5em;
-  transition: ease-in 0.25s;
+  padding: .2em;
+  color: white;
+  text-decoration: none;
 }
-.nav-icons a:hover{
-  color: rgb(220, 178, 41);
-}
+
 .home {
   display: flex;
   justify-content: center;
-  width: 100%;
+  /* width: 100%; */
   margin-top: .5em;
 }
 
@@ -90,20 +77,22 @@ html, body {
   }
 
   .about-page-wrapper{
-    margin: 0 auto;
-    width: 400px;
+    margin-top: 2.25em;
     display: flex; 
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
     height: 60vh;
+    width: 100%;
   }
 
-  .about-page-wrapper p {
-    border: 1.5px solid #243949;
-    background-color: #fdfbfb;
-    border-radius: 6px;
-    padding: 2em 4em;
-  }
-.about-page-wrapper img {
-height: 100%;
+.about-page-wrapper .picture-box {
+  min-width: 70%;
+}
+.about-page-wrapper div img{
+  max-width: 100%;
+}
+.about-page-wrapper .text-box {
+  padding: 1em;
+  width: 400px;
+  color: white;
 }
